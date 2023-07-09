@@ -4,7 +4,7 @@
       <div v-for="item in list" :key="item.id" class="employee-card">
         <img :src="item.avatar" />
         <p>{{ item.first_name }} {{ item.last_name }}</p>
-        <a href="mailto:{{ item.email }}" target="_blank"><button>Skicka mail</button></a>
+        <a :href="`mailto:${ item.email }`" target="_blank"><button>Skicka mail</button></a>
       </div>
     </div>
     <div class="pagination-container">
